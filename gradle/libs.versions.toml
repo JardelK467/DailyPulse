@@ -1,10 +1,14 @@
 [versions]
-agp = "8.2.0-beta05"
-kotlin = "1.9.10"
-compose = "1.5.1"
+agp = "8.2.0"
+kotlin = "1.9.20"
+compose = "1.6.8"
 compose-compiler = "1.5.3"
-compose-material3 = "1.1.2"
-androidx-activityCompose = "1.7.2"
+compose-material3 = "1.2.1"
+androidx-activityCompose = "1.9.0"
+kotlinxCoroutinesCore = "1.7.3"
+ktlint = "12.1.0"
+androidx-lifecycle-viewmodel = "2.8.3"
+
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -14,6 +18,10 @@ compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = 
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+ktlint = { module = "org.jlleitschuh.gradle:ktlint-gradle", version.ref = "ktlint" }
+androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidx-lifecycle-viewmodel" }
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
